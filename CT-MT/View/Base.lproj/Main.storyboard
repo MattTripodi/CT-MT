@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CT_MT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CTLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-x5-bih">
+                                <rect key="frame" x="84" y="44" width="246" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="MBh-e4-p5g"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qv1-80-JqO">
+                                <rect key="frame" x="10" y="237" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4x-Fg-BGb">
+                                <rect key="frame" x="10" y="204" width="394" height="23"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6q-PC-Ii8" customClass="RoundedButton" customModule="CT_MT" customModuleProvider="target">
+                                <rect key="frame" x="132" y="429.5" width="150.5" height="37"/>
+                                <color key="tintColor" red="0.8980392157" green="0.21176470589999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="View Product">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Arial-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="viewProductButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7r-kI-Bv9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qv1-80-JqO" secondAttribute="trailing" constant="10" id="2zA-Iy-v3Q"/>
+                            <constraint firstItem="y4x-Fg-BGb" firstAttribute="top" secondItem="0t8-x5-bih" secondAttribute="bottom" constant="10" id="8DX-42-gxh"/>
+                            <constraint firstItem="y4x-Fg-BGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Fsx-Dl-qjv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F6q-PC-Ii8" secondAttribute="trailing" id="HYw-2E-WMZ"/>
+                            <constraint firstItem="F6q-PC-Ii8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JXa-nW-9qR"/>
+                            <constraint firstItem="F6q-PC-Ii8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R7S-bX-mgf"/>
+                            <constraint firstItem="Qv1-80-JqO" firstAttribute="top" secondItem="y4x-Fg-BGb" secondAttribute="bottom" constant="10" id="Xbd-K6-ich"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y4x-Fg-BGb" secondAttribute="trailing" constant="10" id="ape-nR-tuC"/>
+                            <constraint firstItem="F6q-PC-Ii8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fls-Gi-dRH"/>
+                            <constraint firstItem="Qv1-80-JqO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hdI-Tc-kcU"/>
+                            <constraint firstItem="0t8-x5-bih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="sdk-8h-stZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0t8-x5-bih" secondAttribute="trailing" constant="84" id="wRO-do-swM"/>
+                            <constraint firstItem="0t8-x5-bih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yET-r9-oK1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Qv1-80-JqO" id="viN-Za-uW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CTLogo" width="256" height="256"/>
+    </resources>
+</document>

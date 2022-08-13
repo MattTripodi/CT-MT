@@ -13,9 +13,45 @@
 		A7B64EA128A6AD310057F5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B64E9F28A6AD310057F5B7 /* Main.storyboard */; };
 		A7B64EA328A6AD360057F5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B64EA228A6AD360057F5B7 /* Assets.xcassets */; };
 		A7B64EA628A6AD360057F5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B64EA428A6AD360057F5B7 /* LaunchScreen.storyboard */; };
+		A7B64EB228A70E500057F5B7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64EB128A70E500057F5B7 /* RoundedButton.swift */; };
+		A7B64EBA28A734CB0057F5B7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64EB928A734CB0057F5B7 /* NotificationService.swift */; };
+		A7B64EBE28A734CC0057F5B7 /* CT-MTNoitificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7B64EB728A734CB0057F5B7 /* CT-MTNoitificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFA760BA0F08A313E4919169 /* Pods_CT_MT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B2DC2BABCCF603A8D7B0CD /* Pods_CT_MT.framework */; };
+		B34FC8439BF59637D2DC4F42 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2497C21DC52DCB2542FE65D6 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A7B64EBC28A734CB0057F5B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B64E8E28A6AD310057F5B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7B64EB628A734CB0057F5B7;
+			remoteInfo = "CT-MTNoitificationServiceExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7B64EC228A734CC0057F5B7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7B64EBE28A734CC0057F5B7 /* CT-MTNoitificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		059255A8C3C518E11B1A8017 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-CT-MT-CT-MTNoitificationServiceExtension/Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		2497C21DC52DCB2542FE65D6 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CT_MT_CT_MTNoitificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		284C012F7575FFBAC1B1B5E9 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-CT-MT-CT-MTNoitificationServiceExtension/Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3A26F88A98540AF46F6D92AC /* Pods-CT-MTNoitificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MTNoitificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-CT-MTNoitificationServiceExtension/Pods-CT-MTNoitificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		506F564B2140D3350033DCC4 /* Pods-CT-MTNoitificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MTNoitificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-CT-MTNoitificationServiceExtension/Pods-CT-MTNoitificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		86B2DC2BABCCF603A8D7B0CD /* Pods_CT_MT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CT_MT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF46CEC44F4A97D30F4B9D5 /* Pods-CT-MT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MT.release.xcconfig"; path = "Target Support Files/Pods-CT-MT/Pods-CT-MT.release.xcconfig"; sourceTree = "<group>"; };
 		A7B64E9628A6AD310057F5B7 /* CT-MT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CT-MT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B64E9928A6AD310057F5B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7B64E9B28A6AD310057F5B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +60,12 @@
 		A7B64EA228A6AD360057F5B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7B64EA528A6AD360057F5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7B64EA728A6AD360057F5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B64EAD28A6C6B10057F5B7 /* CT-MT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CT-MT.entitlements"; sourceTree = "<group>"; };
+		A7B64EB128A70E500057F5B7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A7B64EB728A734CB0057F5B7 /* CT-MTNoitificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CT-MTNoitificationServiceExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B64EB928A734CB0057F5B7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A7B64EBB28A734CB0057F5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5973510B8339AA445A8F3D8 /* Pods-CT-MT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MT.debug.xcconfig"; path = "Target Support Files/Pods-CT-MT/Pods-CT-MT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +73,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA760BA0F08A313E4919169 /* Pods_CT_MT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B64EB428A734CB0057F5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34FC8439BF59637D2DC4F42 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D605EB708BBCA7FAAB7A09A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B2DC2BABCCF603A8D7B0CD /* Pods_CT_MT.framework */,
+				2497C21DC52DCB2542FE65D6 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89F84B6C57F0FDF35B271CF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5973510B8339AA445A8F3D8 /* Pods-CT-MT.debug.xcconfig */,
+				8DF46CEC44F4A97D30F4B9D5 /* Pods-CT-MT.release.xcconfig */,
+				3A26F88A98540AF46F6D92AC /* Pods-CT-MTNoitificationServiceExtension.debug.xcconfig */,
+				506F564B2140D3350033DCC4 /* Pods-CT-MTNoitificationServiceExtension.release.xcconfig */,
+				059255A8C3C518E11B1A8017 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig */,
+				284C012F7575FFBAC1B1B5E9 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A7B64E8D28A6AD310057F5B7 = {
 			isa = PBXGroup;
 			children = (
 				A7B64E9828A6AD310057F5B7 /* CT-MT */,
+				A7B64EB828A734CB0057F5B7 /* CT-MTNoitificationServiceExtension */,
 				A7B64E9728A6AD310057F5B7 /* Products */,
+				89F84B6C57F0FDF35B271CF6 /* Pods */,
+				1D605EB708BBCA7FAAB7A09A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B64E9628A6AD310057F5B7 /* CT-MT.app */,
+				A7B64EB728A734CB0057F5B7 /* CT-MTNoitificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +133,50 @@
 		A7B64E9828A6AD310057F5B7 /* CT-MT */ = {
 			isa = PBXGroup;
 			children = (
+				A7B64EAD28A6C6B10057F5B7 /* CT-MT.entitlements */,
 				A7B64E9928A6AD310057F5B7 /* AppDelegate.swift */,
 				A7B64E9B28A6AD310057F5B7 /* SceneDelegate.swift */,
-				A7B64E9D28A6AD310057F5B7 /* ViewController.swift */,
-				A7B64E9F28A6AD310057F5B7 /* Main.storyboard */,
+				A7B64EB028A6FC290057F5B7 /* Model */,
+				A7B64EAF28A6FC1A0057F5B7 /* View */,
+				A7B64EAE28A6FC0D0057F5B7 /* Controller */,
 				A7B64EA228A6AD360057F5B7 /* Assets.xcassets */,
-				A7B64EA428A6AD360057F5B7 /* LaunchScreen.storyboard */,
 				A7B64EA728A6AD360057F5B7 /* Info.plist */,
 			);
 			path = "CT-MT";
+			sourceTree = "<group>";
+		};
+		A7B64EAE28A6FC0D0057F5B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7B64E9D28A6AD310057F5B7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A7B64EAF28A6FC1A0057F5B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7B64E9F28A6AD310057F5B7 /* Main.storyboard */,
+				A7B64EA428A6AD360057F5B7 /* LaunchScreen.storyboard */,
+				A7B64EB128A70E500057F5B7 /* RoundedButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7B64EB028A6FC290057F5B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7B64EB828A734CB0057F5B7 /* CT-MTNoitificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A7B64EB928A734CB0057F5B7 /* NotificationService.swift */,
+				A7B64EBB28A734CB0057F5B7 /* Info.plist */,
+			);
+			path = "CT-MTNoitificationServiceExtension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,18 +186,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7B64EAA28A6AD360057F5B7 /* Build configuration list for PBXNativeTarget "CT-MT" */;
 			buildPhases = (
+				3B9C0D324A20E83E15FD167F /* [CP] Check Pods Manifest.lock */,
 				A7B64E9228A6AD310057F5B7 /* Sources */,
 				A7B64E9328A6AD310057F5B7 /* Frameworks */,
 				A7B64E9428A6AD310057F5B7 /* Resources */,
+				4BA58DC039B3271FD334A1F4 /* [CP] Embed Pods Frameworks */,
+				A7B64EC228A734CC0057F5B7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A7B64EBD28A734CB0057F5B7 /* PBXTargetDependency */,
 			);
 			name = "CT-MT";
 			productName = "CT-MT";
 			productReference = A7B64E9628A6AD310057F5B7 /* CT-MT.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A7B64EB628A734CB0057F5B7 /* CT-MTNoitificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B64EBF28A734CC0057F5B7 /* Build configuration list for PBXNativeTarget "CT-MTNoitificationServiceExtension" */;
+			buildPhases = (
+				D28ABEB86A16753F710D5F92 /* [CP] Check Pods Manifest.lock */,
+				A7B64EB328A734CB0057F5B7 /* Sources */,
+				A7B64EB428A734CB0057F5B7 /* Frameworks */,
+				A7B64EB528A734CB0057F5B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CT-MTNoitificationServiceExtension";
+			productName = "CT-MTNoitificationServiceExtension";
+			productReference = A7B64EB728A734CB0057F5B7 /* CT-MTNoitificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +232,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					A7B64E9528A6AD310057F5B7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A7B64EB628A734CB0057F5B7 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -116,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				A7B64E9528A6AD310057F5B7 /* CT-MT */,
+				A7B64EB628A734CB0057F5B7 /* CT-MTNoitificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +269,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7B64EB528A734CB0057F5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B9C0D324A20E83E15FD167F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CT-MT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BA58DC039B3271FD334A1F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CT-MT/Pods-CT-MT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CT-MT/Pods-CT-MT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CT-MT/Pods-CT-MT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28ABEB86A16753F710D5F92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CT-MT-CT-MTNoitificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7B64E9228A6AD310057F5B7 /* Sources */ = {
@@ -141,10 +350,27 @@
 				A7B64E9E28A6AD310057F5B7 /* ViewController.swift in Sources */,
 				A7B64E9A28A6AD310057F5B7 /* AppDelegate.swift in Sources */,
 				A7B64E9C28A6AD310057F5B7 /* SceneDelegate.swift in Sources */,
+				A7B64EB228A70E500057F5B7 /* RoundedButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B64EB328A734CB0057F5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B64EBA28A734CB0057F5B7 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7B64EBD28A734CB0057F5B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7B64EB628A734CB0057F5B7 /* CT-MTNoitificationServiceExtension */;
+			targetProxy = A7B64EBC28A734CB0057F5B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A7B64E9F28A6AD310057F5B7 /* Main.storyboard */ = {
@@ -282,9 +508,12 @@
 		};
 		A7B64EAB28A6AD360057F5B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5973510B8339AA445A8F3D8 /* Pods-CT-MT.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CT-MT/CT-MT.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J5P95JSAVD;
@@ -295,6 +524,8 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,9 +541,12 @@
 		};
 		A7B64EAC28A6AD360057F5B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF46CEC44F4A97D30F4B9D5 /* Pods-CT-MT.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CT-MT/CT-MT.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J5P95JSAVD;
@@ -323,6 +557,8 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +566,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatthewTripodi.CT-MT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7B64EC028A734CC0057F5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 059255A8C3C518E11B1A8017 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5P95JSAVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CT-MTNoitificationServiceExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CT-MTNoitificationServiceExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MatthewTripodi.CT-MT.CT-MTNoitificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7B64EC128A734CC0057F5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284C012F7575FFBAC1B1B5E9 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5P95JSAVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CT-MTNoitificationServiceExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CT-MTNoitificationServiceExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MatthewTripodi.CT-MT.CT-MTNoitificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,6 +641,15 @@
 			buildConfigurations = (
 				A7B64EAB28A6AD360057F5B7 /* Debug */,
 				A7B64EAC28A6AD360057F5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B64EBF28A734CC0057F5B7 /* Build configuration list for PBXNativeTarget "CT-MTNoitificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B64EC028A734CC0057F5B7 /* Debug */,
+				A7B64EC128A734CC0057F5B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
