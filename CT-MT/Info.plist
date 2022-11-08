@@ -5,6 +5,8 @@
 	<key>CleverTapAccountID</key>
 	<string>RK4-49Z-666Z
 </string>
+	<key>CleverTapRegion</key>
+	<string>us1</string>
 	<key>CleverTapToken</key>
 	<string>1c4-432
 </string>

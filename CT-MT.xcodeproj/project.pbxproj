@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3422EE012910AAD900E70436 /* CTWebviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE002910AAD900E70436 /* CTWebviewVC.swift */; };
+		3422EE032910AB3300E70436 /* CustomDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE022910AB3300E70436 /* CustomDomainViewController.swift */; };
+		3422EE062919C7AC00E70436 /* sampleHTMLCode.html in Resources */ = {isa = PBXBuildFile; fileRef = 3422EE052919BBEB00E70436 /* sampleHTMLCode.html */; };
+		34EF89EC291012200084011B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF89EB291012200084011B /* HomeViewController.swift */; };
+		34EF89F02910A6710084011B /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF89EF2910A6710084011B /* SampleViewController.swift */; };
 		A7B64E9A28A6AD310057F5B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64E9928A6AD310057F5B7 /* AppDelegate.swift */; };
 		A7B64E9C28A6AD310057F5B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64E9B28A6AD310057F5B7 /* SceneDelegate.swift */; };
-		A7B64E9E28A6AD310057F5B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64E9D28A6AD310057F5B7 /* ViewController.swift */; };
+		A7B64E9E28A6AD310057F5B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64E9D28A6AD310057F5B7 /* LoginViewController.swift */; };
 		A7B64EA128A6AD310057F5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B64E9F28A6AD310057F5B7 /* Main.storyboard */; };
 		A7B64EA328A6AD360057F5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B64EA228A6AD360057F5B7 /* Assets.xcassets */; };
 		A7B64EA628A6AD360057F5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B64EA428A6AD360057F5B7 /* LaunchScreen.storyboard */; };
@@ -48,6 +53,11 @@
 		059255A8C3C518E11B1A8017 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-CT-MT-CT-MTNoitificationServiceExtension/Pods-CT-MT-CT-MTNoitificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		2497C21DC52DCB2542FE65D6 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CT_MT_CT_MTNoitificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		284C012F7575FFBAC1B1B5E9 /* Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-CT-MT-CT-MTNoitificationServiceExtension/Pods-CT-MT-CT-MTNoitificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3422EE002910AAD900E70436 /* CTWebviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTWebviewVC.swift; sourceTree = "<group>"; };
+		3422EE022910AB3300E70436 /* CustomDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDomainViewController.swift; sourceTree = "<group>"; };
+		3422EE052919BBEB00E70436 /* sampleHTMLCode.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sampleHTMLCode.html; sourceTree = "<group>"; };
+		34EF89EB291012200084011B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		34EF89EF2910A6710084011B /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		3A26F88A98540AF46F6D92AC /* Pods-CT-MTNoitificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MTNoitificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-CT-MTNoitificationServiceExtension/Pods-CT-MTNoitificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		506F564B2140D3350033DCC4 /* Pods-CT-MTNoitificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MTNoitificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-CT-MTNoitificationServiceExtension/Pods-CT-MTNoitificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		86B2DC2BABCCF603A8D7B0CD /* Pods_CT_MT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CT_MT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +65,7 @@
 		A7B64E9628A6AD310057F5B7 /* CT-MT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CT-MT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B64E9928A6AD310057F5B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7B64E9B28A6AD310057F5B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7B64E9D28A6AD310057F5B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7B64E9D28A6AD310057F5B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A7B64EA028A6AD310057F5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7B64EA228A6AD360057F5B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7B64EA528A6AD360057F5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +105,14 @@
 				2497C21DC52DCB2542FE65D6 /* Pods_CT_MT_CT_MTNoitificationServiceExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3422EE042919BBD300E70436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3422EE052919BBEB00E70436 /* sampleHTMLCode.html */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		89F84B6C57F0FDF35B271CF6 /* Pods */ = {
@@ -139,6 +157,7 @@
 				A7B64EB028A6FC290057F5B7 /* Model */,
 				A7B64EAF28A6FC1A0057F5B7 /* View */,
 				A7B64EAE28A6FC0D0057F5B7 /* Controller */,
+				3422EE042919BBD300E70436 /* Supporting Files */,
 				A7B64EA228A6AD360057F5B7 /* Assets.xcassets */,
 				A7B64EA728A6AD360057F5B7 /* Info.plist */,
 			);
@@ -148,7 +167,11 @@
 		A7B64EAE28A6FC0D0057F5B7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A7B64E9D28A6AD310057F5B7 /* ViewController.swift */,
+				A7B64E9D28A6AD310057F5B7 /* LoginViewController.swift */,
+				34EF89EF2910A6710084011B /* SampleViewController.swift */,
+				3422EE002910AAD900E70436 /* CTWebviewVC.swift */,
+				3422EE022910AB3300E70436 /* CustomDomainViewController.swift */,
+				34EF89EB291012200084011B /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3422EE062919C7AC00E70436 /* sampleHTMLCode.html in Resources */,
 				A7B64EA628A6AD360057F5B7 /* LaunchScreen.storyboard in Resources */,
 				A7B64EA328A6AD360057F5B7 /* Assets.xcassets in Resources */,
 				A7B64EA128A6AD310057F5B7 /* Main.storyboard in Resources */,
@@ -347,10 +371,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7B64E9E28A6AD310057F5B7 /* ViewController.swift in Sources */,
+				34EF89EC291012200084011B /* HomeViewController.swift in Sources */,
+				A7B64E9E28A6AD310057F5B7 /* LoginViewController.swift in Sources */,
+				3422EE032910AB3300E70436 /* CustomDomainViewController.swift in Sources */,
+				34EF89F02910A6710084011B /* SampleViewController.swift in Sources */,
 				A7B64E9A28A6AD310057F5B7 /* AppDelegate.swift in Sources */,
 				A7B64E9C28A6AD310057F5B7 /* SceneDelegate.swift in Sources */,
 				A7B64EB228A70E500057F5B7 /* RoundedButton.swift in Sources */,
+				3422EE012910AAD900E70436 /* CTWebviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
