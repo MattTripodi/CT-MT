@@ -10,6 +10,11 @@
 		3422EE012910AAD900E70436 /* CTWebviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE002910AAD900E70436 /* CTWebviewVC.swift */; };
 		3422EE032910AB3300E70436 /* CustomDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE022910AB3300E70436 /* CustomDomainViewController.swift */; };
 		3422EE062919C7AC00E70436 /* sampleHTMLCode.html in Resources */ = {isa = PBXBuildFile; fileRef = 3422EE052919BBEB00E70436 /* sampleHTMLCode.html */; };
+		3422EE08291A0AF800E70436 /* NativeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE07291A0AF800E70436 /* NativeDisplayViewController.swift */; };
+		3422EE0D291A0B5E00E70436 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE09291A0B5E00E70436 /* BannerCollectionViewCell.swift */; };
+		3422EE0E291A0B5E00E70436 /* DiscoverListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE0B291A0B5E00E70436 /* DiscoverListTableViewCell.swift */; };
+		3422EE0F291A0B5E00E70436 /* DiscoverListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE0C291A0B5E00E70436 /* DiscoverListCollectionViewCell.swift */; };
+		3422EE10291A0B5E00E70436 /* FeaturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422EE0A291A0B5E00E70436 /* FeaturesTableViewCell.swift */; };
 		34EF89EC291012200084011B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF89EB291012200084011B /* HomeViewController.swift */; };
 		34EF89F02910A6710084011B /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF89EF2910A6710084011B /* SampleViewController.swift */; };
 		A7B64E9A28A6AD310057F5B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B64E9928A6AD310057F5B7 /* AppDelegate.swift */; };
@@ -56,6 +61,11 @@
 		3422EE002910AAD900E70436 /* CTWebviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTWebviewVC.swift; sourceTree = "<group>"; };
 		3422EE022910AB3300E70436 /* CustomDomainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDomainViewController.swift; sourceTree = "<group>"; };
 		3422EE052919BBEB00E70436 /* sampleHTMLCode.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sampleHTMLCode.html; sourceTree = "<group>"; };
+		3422EE07291A0AF800E70436 /* NativeDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeDisplayViewController.swift; sourceTree = "<group>"; };
+		3422EE09291A0B5E00E70436 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		3422EE0A291A0B5E00E70436 /* FeaturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesTableViewCell.swift; sourceTree = "<group>"; };
+		3422EE0B291A0B5E00E70436 /* DiscoverListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverListTableViewCell.swift; sourceTree = "<group>"; };
+		3422EE0C291A0B5E00E70436 /* DiscoverListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverListCollectionViewCell.swift; sourceTree = "<group>"; };
 		34EF89EB291012200084011B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		34EF89EF2910A6710084011B /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		3A26F88A98540AF46F6D92AC /* Pods-CT-MTNoitificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT-MTNoitificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-CT-MTNoitificationServiceExtension/Pods-CT-MTNoitificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +181,7 @@
 				34EF89EF2910A6710084011B /* SampleViewController.swift */,
 				3422EE002910AAD900E70436 /* CTWebviewVC.swift */,
 				3422EE022910AB3300E70436 /* CustomDomainViewController.swift */,
+				3422EE07291A0AF800E70436 /* NativeDisplayViewController.swift */,
 				34EF89EB291012200084011B /* HomeViewController.swift */,
 			);
 			path = Controller;
@@ -182,6 +193,10 @@
 				A7B64E9F28A6AD310057F5B7 /* Main.storyboard */,
 				A7B64EA428A6AD360057F5B7 /* LaunchScreen.storyboard */,
 				A7B64EB128A70E500057F5B7 /* RoundedButton.swift */,
+				3422EE09291A0B5E00E70436 /* BannerCollectionViewCell.swift */,
+				3422EE0C291A0B5E00E70436 /* DiscoverListCollectionViewCell.swift */,
+				3422EE0B291A0B5E00E70436 /* DiscoverListTableViewCell.swift */,
+				3422EE0A291A0B5E00E70436 /* FeaturesTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,12 +387,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EF89EC291012200084011B /* HomeViewController.swift in Sources */,
+				3422EE08291A0AF800E70436 /* NativeDisplayViewController.swift in Sources */,
 				A7B64E9E28A6AD310057F5B7 /* LoginViewController.swift in Sources */,
 				3422EE032910AB3300E70436 /* CustomDomainViewController.swift in Sources */,
 				34EF89F02910A6710084011B /* SampleViewController.swift in Sources */,
 				A7B64E9A28A6AD310057F5B7 /* AppDelegate.swift in Sources */,
+				3422EE0E291A0B5E00E70436 /* DiscoverListTableViewCell.swift in Sources */,
 				A7B64E9C28A6AD310057F5B7 /* SceneDelegate.swift in Sources */,
 				A7B64EB228A70E500057F5B7 /* RoundedButton.swift in Sources */,
+				3422EE0F291A0B5E00E70436 /* DiscoverListCollectionViewCell.swift in Sources */,
+				3422EE0D291A0B5E00E70436 /* BannerCollectionViewCell.swift in Sources */,
+				3422EE10291A0B5E00E70436 /* FeaturesTableViewCell.swift in Sources */,
 				3422EE012910AAD900E70436 /* CTWebviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@ class SampleViewController: UIViewController, CleverTapInboxViewControllerDelega
     @IBOutlet var tblEvent: UITableView!
     var eventList: [String] = [String]()
     
+    // MARK: - Variables / Constants
     lazy var cleverTapAdditionalInstance: CleverTap = {
         let ctConfig = CleverTapInstanceConfig.init(accountId: "RK4-49Z-666Z", accountToken: "1c4-432")
         return CleverTap.instance(with: ctConfig)
@@ -43,6 +44,7 @@ extension SampleViewController {
         eventList.append("Record User Event with Properties")
         eventList.append("Record User Charged Event")
         eventList.append("Record User event to an Additional instance")
+        eventList.append("Navigate to Native Display ViewController")
         eventList.append("Analytics in a Webview")
         eventList.append("Increment User Profile Property")
         eventList.append("Decrement User Profile Property")
@@ -106,15 +108,18 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
             recordUserProfile()
             break;
         case 7:
-            navigateToWebview()
+            navigateToNativeDisplay()
             break;
         case 8:
-            incrementUserProfileProperty()
+            navigateToWebview()
             break;
         case 9:
+            incrementUserProfileProperty()
+            break;
+        case 10:
             decrementUserProfileProperty()
             break;
-        case 10: activateCustomDomain()
+        case 11: activateCustomDomain()
         default:
             break;
         }
@@ -187,7 +192,7 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
             "Category": "Mens Accessories",
             "Price": 59.99,
             "Date": NSDate()
-            ] as [String : Any]
+        ] as [String : Any]
         CleverTap.sharedInstance()?.recordEvent("Product viewed", withProps: props)
     }
     
@@ -197,25 +202,25 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
             "Amount": 300,
             "Payment mode": "Credit Card",
             "Charged ID": 24052013
-            ] as [String : Any]
+        ] as [String : Any]
         
         let item1 = [
             "Category": "books",
             "Book name": "The Millionaire next door",
             "Quantity": 1
-            ] as [String : Any]
+        ] as [String : Any]
         
         let item2 = [
             "Category": "books",
             "Book name": "Achieving inner zen",
             "Quantity": 1
-            ] as [String : Any]
+        ] as [String : Any]
         
         let item3 = [
             "Category": "books",
             "Book name": "Chuck it, let's do it",
             "Quantity": 5
-            ] as [String : Any]
+        ] as [String : Any]
         
         CleverTap.sharedInstance()?.recordChargedEvent(withDetails: chargeDetails, andItems: [item1, item2, item3])
     }
@@ -236,6 +241,10 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
             let navigationController = UINavigationController.init(rootViewController: inboxController)
             self.present(navigationController, animated: true, completion: nil)
         }
+    }
+    
+    func navigateToNativeDisplay() {
+        self.performSegue(withIdentifier: "segue_native_display", sender: nil)
     }
     
     func navigateToWebview() {

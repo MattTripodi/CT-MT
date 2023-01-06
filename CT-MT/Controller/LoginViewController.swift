@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     //MARK: - IBOutlets
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var identifierTextField: UITextField!
     
     //MARK: - Constants/Variables
     
@@ -24,7 +25,7 @@ class LoginViewController: UIViewController {
     func recordUserProfile() {
         let profile: [String: AnyObject] = [
             "Name": "Matt Tripodi" as AnyObject,
-            "Identity": 12345678 as AnyObject,
+            "Identity": identifierTextField.text as AnyObject,
             "Email": emailTextField.text as AnyObject
         ]
         print(profile)
@@ -35,8 +36,14 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         
         // Identify User using onUserLogin method
-        //recordUserProfile()
+        recordUserProfile()
         
+        // Segue to SampleViewController
+        self.performSegue(withIdentifier: "segue_sample", sender: self)
+    }
+    
+    
+    @IBAction func skipLoginButtonTapped(_ sender: UIButton) {
         // Segue to SampleViewController
         self.performSegue(withIdentifier: "segue_sample", sender: self)
     }
