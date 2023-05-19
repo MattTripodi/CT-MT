@@ -1,0 +1,6 @@
+framework module Pods_CT_MT_CT_MTNoitificationServiceExtension {
+  umbrella header "Pods-CT-MT-CT-MTNoitificationServiceExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
