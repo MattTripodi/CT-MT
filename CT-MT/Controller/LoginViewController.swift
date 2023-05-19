@@ -26,7 +26,8 @@ class LoginViewController: UIViewController {
         let profile: [String: AnyObject] = [
             "Name": "Matt Tripodi" as AnyObject,
             "Identity": identifierTextField.text as AnyObject,
-            "Email": emailTextField.text as AnyObject
+            "Email": emailTextField.text as AnyObject,
+            "ID": "1234" as AnyObject
         ]
         print(profile)
         CleverTap.sharedInstance()?.onUserLogin(profile)

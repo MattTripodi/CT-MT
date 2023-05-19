@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import UserNotifications
 import CleverTapSDK
 
-class SampleViewController: UIViewController, CleverTapInboxViewControllerDelegate {
+class SampleViewController: UIViewController, CleverTapInboxViewControllerDelegate, UNUserNotificationCenterDelegate {
     
     @IBOutlet var tblEvent: UITableView!
     var eventList: [String] = [String]()
+    var deviceIPLocation: Void? = CleverTap.sharedInstance()?.enableDeviceNetworkInfoReporting(true)
     
     // MARK: - Variables / Constants
     lazy var cleverTapAdditionalInstance: CleverTap = {
@@ -22,6 +24,7 @@ class SampleViewController: UIViewController, CleverTapInboxViewControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        registerForPush()
         
         loadData()
         registerAppInbox()
@@ -36,6 +39,19 @@ class SampleViewController: UIViewController, CleverTapInboxViewControllerDelega
 
 extension SampleViewController {
     
+    func registerForPush() {
+        // Register for Push notifications
+        UNUserNotificationCenter.current().delegate = self
+        // request Permissions
+        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .badge, .alert], completionHandler: {granted, error in
+            if granted {
+                DispatchQueue.main.async {
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+        })
+    }
+    
     func loadData(){
         eventList.append("Show App Inbox")
         eventList.append("Record User Profile (profilePush)")
@@ -45,6 +61,7 @@ extension SampleViewController {
         eventList.append("Record User Charged Event")
         eventList.append("Record User event to an Additional instance")
         eventList.append("Navigate to Native Display ViewController")
+        eventList.append("Navigate to Native Display VC 2")
         eventList.append("Analytics in a Webview")
         eventList.append("Increment User Profile Property")
         eventList.append("Decrement User Profile Property")
@@ -90,36 +107,39 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
             showAppInbox()
             break;
         case 1:
-            recordUserProfileWithProperties()
+            recordUserProfile()
             break;
         case 2:
-            recordUserEventWithoutProperties()
+            recordUserProfileWithProperties()
             break;
         case 3:
-            recordUserEventWithProperties()
+            recordUserEventWithoutProperties()
             break;
         case 4:
-            recordUserChargedEvent()
+            recordUserEventWithProperties()
             break;
         case 5:
-            recordUserEventforAdditionalInstance()
+            recordUserChargedEvent()
             break;
         case 6:
-            recordUserProfile()
+            recordUserEventforAdditionalInstance()
             break;
         case 7:
             navigateToNativeDisplay()
             break;
         case 8:
-            navigateToWebview()
+             navigateToNativeDisplay2()
             break;
         case 9:
-            incrementUserProfileProperty()
+            navigateToWebview()
             break;
         case 10:
+            incrementUserProfileProperty()
+            break;
+        case 11:
             decrementUserProfileProperty()
             break;
-        case 11: activateCustomDomain()
+        case 12: activateCustomDomain()
         default:
             break;
         }
@@ -138,7 +158,7 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
         let profile: Dictionary<String, AnyObject> = [
             "Name": "Matt Tripodi" as AnyObject,                 // String
             //"Identity": 12345678 as AnyObject,                   // String or number
-            "Email": "matt@test.com" as AnyObject,              // Email address of the user
+            "Email": "matthew@clevertap.com" as AnyObject,              // Email address of the user
             "Phone": "+15161235555" as AnyObject,                // Phone (with the country code, starting with +)
             "Gender": "M" as AnyObject,                          // Can be either M or F
             "Employed": "Y" as AnyObject,                        // Can be either Y or N
@@ -146,14 +166,15 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
             "Married": "Y" as AnyObject,                         // Can be either Y or N
             "DOB": d! as AnyObject,                              // Date of Birth. An NSDate object
             "Age": 28 as AnyObject,                              // Not required if DOB is set
-            "Tz":"America/New_York" as AnyObject,                    //an abbreviation such as "PST", a full name such as "America/Los_Angeles",
+            "Tz": NSTimeZone.local as AnyObject,                    //an abbreviation such as "PST", a full name such as "America/Los_Angeles",
             //or a custom ID such as "GMT-8:00"
-            "Photo": "www.foobar.com/image.jpeg" as AnyObject,   // URL to the Image
+            "Photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9EAq79jPhTYKiH3gTpxzj9Na60wIARMUaA&usqp=CAU" as AnyObject,   // URL to the Image
             
             // optional fields. controls whether the user will be sent email, push etc.
-            "MSG-email": false as AnyObject,                     // Disable email notifications
+            "MSG-email": true as AnyObject,                     // Disable email notifications
             "MSG-push": true as AnyObject,                       // Enable push notifications
-            "MSG-sms": false as AnyObject,                        // Disable SMS notifications
+            "MSG-sms": true as AnyObject,                        // Disable SMS notifications
+            "MSG-webpush": true as AnyObject, //WebPush Toggle does NOT work
             
             //custom fields
             "score": 15 as AnyObject,
@@ -245,6 +266,10 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate{
     
     func navigateToNativeDisplay() {
         self.performSegue(withIdentifier: "segue_native_display", sender: nil)
+    }
+    
+    func navigateToNativeDisplay2() {
+        self.performSegue(withIdentifier: "segue_native_display_2", sender: nil)
     }
     
     func navigateToWebview() {

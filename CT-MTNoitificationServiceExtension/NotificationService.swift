@@ -5,6 +5,7 @@
 //  Created by Matthew Tripodi on 8/12/22.
 //
 
+import UserNotifications
 import CTNotificationService
 import CleverTapSDK
 
@@ -17,4 +18,6 @@ class NotificationService: CTNotificationServiceExtension {
         CleverTap.sharedInstance()?.recordNotificationViewedEvent(withData: request.content.userInfo)
         super.didReceive(request, withContentHandler: contentHandler)
     }
+    
+    
 }

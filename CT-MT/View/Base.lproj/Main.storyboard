@@ -169,11 +169,50 @@
                         <outlet property="tblEvent" destination="BIK-70-BtW" id="aFT-v7-erv"/>
                         <segue destination="amn-5D-qFT" kind="show" identifier="segue_webview" id="w9w-KM-byO"/>
                         <segue destination="5GG-hy-d23" kind="show" identifier="segue_native_display" id="4dT-xj-cOo"/>
+                        <segue destination="gKg-iR-zCH" kind="show" identifier="segue_native_display_2" id="mmM-LA-ENh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyp-sd-V4g" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3813.04347826087" y="138.61607142857142"/>
+        </scene>
+        <!--Native Display2 View Controller-->
+        <scene sceneID="ONb-iR-vlb">
+            <objects>
+                <viewController id="gKg-iR-zCH" customClass="NativeDisplay2ViewController" customModule="CT_MT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvq-iA-vXL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaP-Ya-c6Z">
+                                <rect key="frame" x="144.66666666666666" y="411" width="104" height="30"/>
+                                <state key="normal" title="Event 2 Trigger"/>
+                                <connections>
+                                    <action selector="event2Trigger:" destination="gKg-iR-zCH" eventType="touchUpInside" id="pL0-LO-jwR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umT-je-AmV">
+                                <rect key="frame" x="145.66666666666666" y="331" width="102" height="30"/>
+                                <state key="normal" title="Event 1 Trigger"/>
+                                <connections>
+                                    <action selector="event1Trigger:" destination="gKg-iR-zCH" eventType="touchUpInside" id="IYV-75-YhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DPJ-1L-v7n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FaP-Ya-c6Z" firstAttribute="top" secondItem="umT-je-AmV" secondAttribute="bottom" constant="50" id="8be-pc-f8N"/>
+                            <constraint firstItem="FaP-Ya-c6Z" firstAttribute="centerX" secondItem="rvq-iA-vXL" secondAttribute="centerX" id="Jpq-PG-6VY"/>
+                            <constraint firstItem="umT-je-AmV" firstAttribute="centerX" secondItem="rvq-iA-vXL" secondAttribute="centerX" id="cxz-vV-7Zc"/>
+                            <constraint firstItem="FaP-Ya-c6Z" firstAttribute="centerY" secondItem="rvq-iA-vXL" secondAttribute="centerY" id="dDb-GM-XSM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spc-Rp-giK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oie-In-WwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3813" y="-559"/>
         </scene>
         <!--WebviewVC-->
         <scene sceneID="Wte-yh-ujC">
