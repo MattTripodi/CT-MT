@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = self
+        
         //Debug Enabled Logs
         CleverTap.setDebugLevel(CleverTapLogLevel.debug.rawValue)
         // Configure and init the default shared CleverTap instance (add CleverTap Account ID and Account token in your .plist file)
@@ -54,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         })
     }
     
+    
     // MARK: - Notification Delegates
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
@@ -80,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         NSLog("%@: will present notification: %@", self.description, notification.request.content.userInfo)
         CleverTap.sharedInstance()?.recordNotificationViewedEvent(withData: notification.request.content.userInfo)
-        completionHandler([.badge, .sound, .list])
+        completionHandler([.badge, .sound, .list, .banner])
     }
     
     func application(_ application: UIApplication,
